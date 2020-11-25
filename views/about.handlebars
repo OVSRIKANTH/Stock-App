@@ -7,3 +7,8 @@
 {{#each stock}}
     {{@key}}  |  {{this}}<br/>
 {{/each}}
+
+<br/><br/>
+{{#each companies}}
+    {{@key}}  |  {{#each this}}  {{@key}} | {{this}} <br/> {{/each}}<br/>
+{{/each}}
